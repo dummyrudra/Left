@@ -1,0 +1,83 @@
+Install Docker-->
+	sudo apt-get remove docker docker-engine docker.io containerd runc
+
+	sudo apt-get update
+	
+	sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+	echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+
+	sudo apt-get update
+
+	sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+
+
+Docker cmd=========>
+
+	sudo docker
+
+	sudo docker run hello-world
+
+	sudo docker run -it centos /bin/bash 
+
+	sudo docker run -d -p 80:80 docker/getting-started
+	
+	sudo chmod 666 /var/run/docker.sock
+	
+	docker --version
+
+	docker info
+
+	docker pull jenkins/jenkins    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+	docker inspect repoName(jenkins/jenkins)
+
+		--> copy IP and paste on browser
+
+	docker logs container Id
+
+	
+Docker images--->
+
+	docker images
+
+	docker run imges(centos)
+
+	docker rmi imageId
+
+
+Docker containers--->
+
+	docker ps
+
+	docker ps -a 
+
+	docker history imageId
+
+	sudo docker run –it centos /bin/bash 
+
+	docker top ContainerID 
+
+	docker stop containerId
+
+	docker rm containerId
+
+	docker stats containerId
+
+	docker attach conatinerId
+
+	docker pause containerId
+
+	docker unpause containerId
+
+	docker  kill containerId
+
+	
+
+	
+

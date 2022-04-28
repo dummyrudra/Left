@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "61fa59ed218c25c34fd5220b"
+  },
+  "tenant": null,
+  "roleName": "member",
+  "organization": null,
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2022-02-02T10:16:13.074Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-02T10:16:13.074Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61fa5e81218c25c34fd52210"
+  },
+  "tenant": null,
+  "roleName": "admin",
+  "organization": null,
+  "isDeleted": false,
+  "createdAt": {
+    "$date": "2022-02-02T10:35:45.548Z"
+  },
+  "updatedAt": {
+    "$date": "2022-02-02T10:35:45.548Z"
+  },
+  "__v": 0
+}]

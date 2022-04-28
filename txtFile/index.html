@@ -1,0 +1,13 @@
+
+<div class="favorite">
+	
+</div>
+<h1>Test</h1>
+
+
+<script>
+var el = document.querySelector('.favorite');
+let root = el.attachShadow({mode:'open'});
+root.innerHTML = '<style>h1{color:red}</style><h1>Hello</h1>'
+
+</script>

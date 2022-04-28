@@ -1,0 +1,123 @@
+export media_jwtPrivateKey="mySecretKey4%$34"
+export media_db="mongodb://localhost/media"
+
+export media_db="mongodb+srv://prabhat:%26y2XyZWb3@media.9po1n.mongodb.net/media?authSource=admin&replicaSet=atlas-6bgszl-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true"
+
+export media_mailPass="123@#abc"
+clear
+nodemon
+
+
+
+GitHub Token:-  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
+
+GitLab Token:-  s-w4v4Bu7uTKugjkwrAC
+
+    default: {
+        project: { create: false, update: false, delete: false, read: true },
+
+        sprint: { create: true, update: true, delete: true, read: true },
+
+        epic: { create: true, update: true, delete: true, read: true },
+
+        stories: { create: false, update: false, delete: false, read: true },
+
+        task: { create: true, update: true, delete: true, read: true },
+
+        user: { create: false, update: true, delete: false, read: true },
+
+        role: { create: false, update: false, delete: false, read: true },
+        list: { create: true, update: true, delete: false, read: true },
+
+        assignProjectLead: false,
+        assignProjectTask: true,
+        projectList: true,
+        revokeMember: false,
+        moveTask: true,
+        assignRole: false,
+        revokeRole: false,
+      },
+
+
+
+ default: {
+        project: { create: false, update: false, delete: false, read: true },
+
+        sprint: { create: false, update: false, delete: false, read: true },
+
+        epic: { create: false, update: false, delete: false, read: true },
+
+        stories: { create: false, update: false, delete: false, read: true },
+
+        task: { create: false, update: false, delete: false, read: true },
+
+        user: { create: false, update: false, delete: false, read: true },
+
+        role: { create: false, update: false, delete: false, read: true },
+
+        assignProjectLead: false,
+        assignProjectTask: false,
+        projectList: false,
+        revokeMember: false,
+        moveTask: false,
+
+
+
+
+
+
+
+
+
+Required changes for multiple organisation (back end) -->
+
+   -- User model changes (organisation  to array of organisation with organisation role) (DONE).
+       
+   -- After login generate new token with organisation ID (DONE).
+
+   -- Changes in authentication middle ware (DONE).	
+
+   -- Updated all get API's (DONE).   (1 h)
+
+   -- Changes in organisation validation (in required controllers) (DONE).  (1 h)
+
+   -- Update user organisation after invited to any project (DONE). (0.5 h)
+
+   -- Update set organisation (in required controllers) (DONE). (0.5 h) 
+
+  -- Manual API testing(DONE) (1 h)
+		 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        assignRole: false,
+        revokeRole: false,
+      },
+    },
